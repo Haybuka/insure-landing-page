@@ -4,9 +4,17 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: inherit;
+	box-sizing: border-box;
+	font-family: cursive;
+	font-weight: 700;
 }
-
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins' !important;
+	font-weight: 400 !important;
+}
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -165,6 +173,7 @@ footer h4 {
 		background-color: hsl(256, 26%, 20%);
 		background-position: top left;
 		background-repeat: no-repeat;
+		padding: 30px 30px;
 		background-color: hsl(0, 0%, 98%);
 	}
 	.footer__nav {
@@ -225,5 +234,79 @@ footer h4 {
 	.hero__img img {
 		position: static;
 		width: 100%;
+	}
+	main {
+		padding: 30px;
+	}
+	.nav-mobile {
+		padding: 15px 0;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(2, minmax(0, auto));
+	}
+	header .nav__logo {
+		grid-column: 1/3;
+		grid-row: 1/2;
+		padding-left: 30px;
+	}
+	header .harmburger {
+		grid-column: 12/13;
+		display: block;
+		grid-row: 1/2;
+		padding: 5px;
+		margin-right: 30px;
+		cursor: pointer;
+		border: 1px solid hsl(270, 9%, 17%);
+	}
+
+	header .harmburger span {
+		width: 30px;
+		height: 3px;
+		margin: 0 auto;
+
+		display: block;
+		border-radius: 50px;
+		background-color: hsl(256, 26%, 20%);
+	}
+	header .harmburger span:nth-of-type(even) {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	header .nav__item {
+		grid-column: 1/13;
+		grid-row: 2/3;
+		margin-top: 15px;
+		display: none;
+		padding: 15px;
+		transition: all 0.5s;
+		background-color: hsl(256, 26%, 20%);
+	}
+	header .nav__item > ul {
+		display: block;
+		margin: 0;
+		text-align: center;
+	}
+	header .nav__item li {
+		margin: 20px 0;
+		color: hsl(0, 0%, 98%);
+	}
+	header .nav__item.open {
+		display: block;
+		height: auto;
+	}
+
+	header .nav__btn {
+		padding: 10px 25px;
+		border: 1px solid hsl(0, 0%, 98%);
+		color: hsl(0, 0%, 98%);
+		background: hsl(256, 26%, 20%);
+		transition: all .5s;
+		cursor: pointer;
+		margin-right: 0 !important;
+	}
+	header .nav__btn:hover {
+		color: hsl(256, 26%, 20%);
+		background: hsl(0, 0%, 98%);
 	}
 }
