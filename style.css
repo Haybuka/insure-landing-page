@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 70px;
+	align-items: center;
+}
+.harmburger {
+	display: none;
+}
+.nav__item > ul {
+	display: flex;
+	padding: 0;
+	margin: 10px;
+	align-items: center;
+}
+.nav__item li {
+	list-style-type: none;
+	margin: 0 25px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.nav__btn {
+	padding: 10px 25px;
+	border: 1px solid hsl(256, 26%, 20%);
+	color: hsl(256, 26%, 20%);
+	background: hsl(0, 0%, 98%);
+	transition: all .5s;
+	cursor: pointer;
+	margin-right: 0 !important;
+}
+.nav__btn:hover {
+	color: hsl(0, 0%, 98%);
+	background: hsl(256, 26%, 20%);
+}
+.banner {
+	background: hsl(256, 26%, 20%);
+}
+.hero {
+	padding: 15px 70px;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 70px;
+}
+.hero__img {
+	position: relative;
+	width: 400px;
+	top: 30px;
+	right: 10px;
+}
+.hero__img img {
+	position: absolute;
+	width: 100%;
+}
+.hero__left-article {
+	padding: 80px 0;
+	color: hsl(0, 0%, 98%);
+}
+.horizontal--span {
+	display: block;
+	width: 100px;
+	height: 1px;
+	background: hsl(0, 0%, 98%);
+}
+.span-color {
+	background: hsl(256, 26%, 20%);
+}
+.hero__left-article h1 {
+	font-size: 48px;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+p {
+	font-size: 18px;
+}
+.hero__btn {
+	padding: 10px 25px;
+	border: 1px solid hsl(0, 0%, 98%);
+	color: hsl(0, 0%, 98%);
+	background: hsl(256, 26%, 20%);
+	transition: all .5s;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.hero__btn:hover {
+	color: hsl(256, 26%, 20%);
+	background: hsl(0, 0%, 98%);
+}
+main {
+	margin-top: 150px;
+	padding: 0 70px;
+}
+main h2 {
+	font-size: 48px;
+}
+.different aside {
+	display: flex;
+	justify-content: space-between;
+	/* column-count: 3; */
+}
+.different article {
+	padding: 10px;
+}
+footer {
+	padding: 30px 70px;
+	background-color: hsl(0, 0%, 98%);
+}
+.footer__nav {
+	border-bottom: .5px solid hsl(273, 4%, 51%);
+	padding: 0;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+footer aside {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+footer ul {
+	padding: 0;
+}
+footer li {
+	list-style: none;
+	margin-top: 10px;
+	cursor: pointer;
+}
+footer h4 {
+	color: hsl(273, 4%, 51%);
+
+	font-size: 12px;
+}
