@@ -8,6 +8,11 @@ body {
 	font-family: cursive;
 	font-weight: 700;
 }
+.wrapper {
+	background: url('images/bg-pattern-intro-left-desktop.svg');
+	background-position: -30px center;
+	background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -71,7 +76,7 @@ nav {
 .hero__left-article {
 	padding: 80px 0;
 	color: hsl(0, 0%, 98%);
-	padding-right: 10px;
+	margin-left: 30px;
 }
 .horizontal--span {
 	display: block;
@@ -167,7 +172,7 @@ footer h4 {
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 940px) {
 	footer {
 		background: url('images/bg-pattern-footer-mobile.svg');
 		background-color: hsl(256, 26%, 20%);
@@ -230,6 +235,7 @@ footer h4 {
 		grid-row: 2/3;
 		padding: 30px;
 		text-align: center;
+		margin-left: 0px;
 	}
 	.hero__img img {
 		position: static;
@@ -253,7 +259,7 @@ footer h4 {
 		grid-column: 12/13;
 		display: block;
 		grid-row: 1/2;
-		padding: 5px;
+		padding: 10px;
 		margin-right: 30px;
 		cursor: pointer;
 		border: 1px solid hsl(270, 9%, 17%);
@@ -261,12 +267,29 @@ footer h4 {
 
 	header .harmburger span {
 		width: 30px;
+		transition: all .3s ease-in;
 		height: 3px;
 		margin: 0 auto;
-
 		display: block;
 		border-radius: 50px;
 		background-color: hsl(256, 26%, 20%);
+	}
+	.harmburger span:nth-child(2).drop {
+		background-color: transparent;
+	}
+
+	.harmburger span:nth-child(1).cross {
+		transform: rotate(50deg);
+		position: relative;
+		top: 5px;
+	}
+
+	.harmburger span:nth-child(3).revCross {
+		transform: rotate(-50deg);
+		position: relative;
+		top: -10px;
+
+		transform-origin: 'top left';
 	}
 	header .harmburger span:nth-of-type(even) {
 		margin-top: 5px;

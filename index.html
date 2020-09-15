@@ -17,7 +17,7 @@
       font-size: 11px;
       text-align: center;
     }
-    
+
 
 
     .attribution a {
@@ -59,38 +59,42 @@
           <button class="btn hero__btn">View plans</button>
         </article>
         <div class="hero__img">
-          <img src="images/image-intro-desktop.jpg" alt="">
+          <!-- <img src="images/image-intro-desktop.jpg" alt=""> -->
+          <picture>
+            <source media="(max-width:840px)" srcset="images/image-intro-mobile.jpg">
+            <img src="images/image-intro-desktop.jpg" alt=" "">
+                </picture>
         </div>
       </section>
     </div>
     <main>
-      <section class="different">
-        <span class="horizontal--span span-color"> </span>
-        <h2>We’re different</h2>
-        <aside>
-          <article>
-            <img src="images/icon-snappy-process.svg" alt="">
-            <h3>Snappy Process</h3>
-            <p>Our application process can be completed in minutes, not hours. Don’t get
-              stuck filling in tedious forms.</p>
-          </article>
-          <article>
-            <img src="images/icon-affordable-prices.svg" alt="">
-            <h3>Affordable Prices</h3>
-            <p>
-              We don’t want you worrying about high monthly costs. Our prices may be low,
-              but we still offer the best coverage possible.
-            </p>
-          </article>
-          <article>
-            <img src="images/icon-people-first.svg" alt="">
-            <h3>People First</h3>
-            <p>
-              Our plans aren’t full of conditions and clauses to prevent payouts. We make
-              sure you’re covered when you need it.
-            </p>
-          </article>
-        </aside>
+      <section class=" different">
+            <span class="horizontal--span span-color"> </span>
+            <h2>We’re different</h2>
+            <aside>
+              <article>
+                <img src="images/icon-snappy-process.svg" alt="">
+                <h3>Snappy Process</h3>
+                <p>Our application process can be completed in minutes, not hours. Don’t get
+                  stuck filling in tedious forms.</p>
+              </article>
+              <article>
+                <img src="images/icon-affordable-prices.svg" alt="">
+                <h3>Affordable Prices</h3>
+                <p>
+                  We don’t want you worrying about high monthly costs. Our prices may be low,
+                  but we still offer the best coverage possible.
+                </p>
+              </article>
+              <article>
+                <img src="images/icon-people-first.svg" alt="">
+                <h3>People First</h3>
+                <p>
+                  Our plans aren’t full of conditions and clauses to prevent payouts. We make
+                  sure you’re covered when you need it.
+                </p>
+              </article>
+            </aside>
       </section>
       <section class="how_Work">
         <h2>
@@ -98,77 +102,83 @@
         </h2>
         <button class="btn hero__btn">how we work</button>
       </section>
-    </main>
-    <footer>
-      <nav class="footer__nav">
-        <div class="nav__logo">
-          <img src="images/logo.svg" alt="">
-        </div>
-        <div class="nav__item">
-          <ul>
-            <li><img src="images/icon-facebook.svg" alt=""></li>
-            <li><img src="images/icon-twitter.svg" alt=""></li>
-            <li><img src="images/icon-pinterest.svg" alt=""></li>
-            <li><img src="images/icon-instagram.svg" alt=""></li>
-          </ul>
-        </div>
-        <div class="harmburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      <aside>
-        <div>
-          <h4>Our company</h4>
-          <ul>
-            <li>How we work</li>
-            <li>Why Insure?</li>
-            <li>View plans</li>
-            <li>Reviews</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Help me</h4>
-          <ul>
-            <li>FAQ</li>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>Sales</li>
-            <li>Support</li>
-            <li>Live chat</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Others</h4>
-          <ul>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Licenses</li>
-          </ul>
-        </div>
-  
-      </aside>
-    </footer>
-  </div>
+      </main>
+      <footer>
+        <nav class="footer__nav">
+          <div class="nav__logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <div class="nav__item">
+            <ul>
+              <li><img src="images/icon-facebook.svg" alt=""></li>
+              <li><img src="images/icon-twitter.svg" alt=""></li>
+              <li><img src="images/icon-pinterest.svg" alt=""></li>
+              <li><img src="images/icon-instagram.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="harmburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <aside>
+          <div>
+            <h4>Our company</h4>
+            <ul>
+              <li>How we work</li>
+              <li>Why Insure?</li>
+              <li>View plans</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help me</h4>
+            <ul>
+              <li>FAQ</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>Sales</li>
+              <li>Support</li>
+              <li>Live chat</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Others</h4>
+            <ul>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Licenses</li>
+            </ul>
+          </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Ndulue Paschal</a>.
-  </div>
-  <script>
-    let burger = document.querySelector('.harmburger');
-    let dropDown = document.querySelector('header .nav__item');
-    burger.addEventListener('click',()=>{
-       dropDown.classList.toggle('open')
-    })
-  </script>
+        </aside>
+      </footer>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ndulue Paschal</a>.
+    </div>
+    <script>
+      let burger = document.querySelector('.harmburger');
+      const midSpan = document.querySelector('.harmburger span:nth-child(2)')
+      const firstSpan = document.querySelector('.harmburger span:nth-child(1)')
+      const thirdSpan = document.querySelector('.harmburger span:nth-child(3)')
+      let dropDown = document.querySelector('header .nav__item');
+      burger.addEventListener('click', () => {
+        midSpan.classList.toggle('drop')
+        firstSpan.classList.toggle('cross')
+        thirdSpan.classList.toggle('revCross')
+        dropDown.classList.toggle('open')
+      })
+    </script>
 </body>
 
 </html>
