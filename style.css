@@ -63,6 +63,7 @@ nav {
 .hero__left-article {
 	padding: 80px 0;
 	color: hsl(0, 0%, 98%);
+	padding-right: 10px;
 }
 .horizontal--span {
 	display: block;
@@ -111,6 +112,10 @@ main h2 {
 	padding: 10px;
 }
 footer {
+	background: url('images/bg-pattern-footer-desktop.svg');
+	background-color: hsl(256, 26%, 20%);
+	background-position: top left;
+	background-repeat: no-repeat;
 	padding: 30px 70px;
 	background-color: hsl(0, 0%, 98%);
 }
@@ -138,5 +143,87 @@ footer li {
 footer h4 {
 	color: hsl(273, 4%, 51%);
 
-	font-size: 12px;
+	font-size: 15px;
+}
+.how_Work {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 60px;
+	padding-right: 60px;
+	align-items: center;
+	color: hsl(0, 0%, 98%);
+	background: url('images/bg-pattern-how-we-work-desktop.svg');
+	background-color: hsl(256, 26%, 20%);
+	background-position: top right;
+	background-repeat: no-repeat;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+@media screen and (max-width: 840px) {
+	footer {
+		background: url('images/bg-pattern-footer-mobile.svg');
+		background-color: hsl(256, 26%, 20%);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-color: hsl(0, 0%, 98%);
+	}
+	.footer__nav {
+		display: block;
+		text-align: center;
+	}
+	.footer__nav ul {
+		margin: 30px;
+		justify-content: center;
+	}
+	footer aside {
+		display: block;
+		text-align: center;
+	}
+	footer h4 {
+		margin: 30px;
+	}
+	.how_Work {
+		display: block;
+		text-align: center;
+		padding: 50px;
+		background: url('images/bg-pattern-how-we-work-mobile.svg');
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-color: hsl(256, 26%, 20%);
+	}
+	.different aside {
+		display: block;
+	}
+	.different {
+		text-align: center;
+	}
+	.span-color {
+		margin: 0 auto;
+	}
+	.hidden-span {
+		display: none;
+	}
+	.hero {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(2, minmax(0, auto));
+		padding-top: 0;
+	}
+	.hero__img {
+		grid-column: 1/13;
+		grid-row: 1/2;
+		position: static;
+		width: 100vw;
+	}
+	.hero__left-article {
+		grid-column: 1/13;
+		grid-row: 2/3;
+		padding: 30px;
+		text-align: center;
+	}
+	.hero__img img {
+		position: static;
+		width: 100%;
+	}
 }
