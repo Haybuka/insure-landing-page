@@ -118,6 +118,12 @@ main {
 main h2 {
 	font-size: 48px;
 }
+.nav__item li:hover {
+	color: hsl(256, 26%, 20%);
+}
+.footMage img:hover {
+	background: hsl(256, 26%, 20%);
+}
 .different aside {
 	display: flex;
 	justify-content: space-between;
