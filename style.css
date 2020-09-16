@@ -107,7 +107,7 @@ p {
 	overflow: hidden;
 }
 .hero__btn::before {
-	content: "How We WOrk";
+	content: " ";
 	text-transform: uppercase;
 	padding-top: 10px;
 	position: absolute;
@@ -373,5 +373,18 @@ footer h4 {
 	header .nav__btn:hover {
 		color: hsl(256, 26%, 20%);
 		background: hsl(0, 0%, 98%);
+	}
+	.floated-picture {
+		position: absolute;
+		top: 1165px;
+		left: 0;
+		width: 10%;
+	}
+	.floated-right-picture {
+		position: absolute;
+		top: 1165px;
+		right: 0;
+		width: 10%;
+		z-index: 1;
 	}
 }
