@@ -182,6 +182,24 @@ footer h4 {
 
 	font-size: 15px;
 }
+.floated-picture {
+	position: absolute;
+	top: 55%;
+	left: 0;
+	width: 10%;
+}
+.floated-right-picture {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	width: 20%;
+	z-index: 1;
+}
+.floated-picture img,
+.floated-right-picture img {
+	width: 100%;
+}
+
 .how_Work {
 	display: flex;
 	justify-content: space-between;
