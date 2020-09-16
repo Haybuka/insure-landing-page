@@ -106,32 +106,10 @@ p {
 	transition: all .5s;
 	overflow: hidden;
 }
-.hero__btn::before {
-	content: " ";
-	text-transform: uppercase;
-	padding-top: 10px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	transition: all .5s;
-}
-.btn::before {
-	content: "VIEW PLANS";
-	text-transform: uppercase;
-	padding-top: 10px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	transition: all .5s;
-}
-.hero__btn:hover::before {
+
+.hero__btn:hover {
 	color: hsl(256, 26%, 20%);
 	background: hsl(0, 0%, 98%);
-	transform: translateX(-120px);
 }
 main {
 	margin-top: 150px;
